@@ -3,7 +3,7 @@
 > Created a CrawlSpider to extract products from https://venroy.com.au/
 
 
-To run a crawler run this next command from the root directory of a project:
+To run a crawler run this command from the root directory of the project:
 ```
 scrapy crawl venroy_crawler
 ```
