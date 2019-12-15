@@ -10,7 +10,7 @@ class VenroyCrawlerSpider(CrawlSpider):
     name = 'venroy_crawler'
     allowed_domains = ['venroy.com.au']
     start_urls = ['http://venroy.com.au/']
-    rules = (Rule(LinkExtractor(allow='collections/', deny=('spring-18-mens', 'spring-18' , 'gift-cards', 'shop-all-mens', 'shop-all-womens', 'shop-new-womens')), callback='parse_categories', follow=True),
+    rules = (Rule(LinkExtractor(allow='collections/', deny=('spring-18-mens', 'spring-18' , 'gift-cards', 'shop-all-mens', 'shop-all-womens', 'shop-new-womens', 'shop-new-mens')), callback='parse_categories', follow=True),
         Rule(LinkExtractor(allow=(), restrict_xpaths=('//a[@class="grid-view-item__link grid-view-item__image-container"]',)), callback='parse_product'),
     )
 
