@@ -36,7 +36,7 @@ FIELDS_TO_EXPORT = [
 
 CSV_DELIMITER = "/n"
 
-EXTENSIONS = { 'scrapy.extensions.closespider.CloseSpider': 5}
+#EXTENSIONS = { 'scrapy.extensions.closespider.CloseSpider': 5}
 CLOSESPIDER_ITEMCOUNT = 4
 
 

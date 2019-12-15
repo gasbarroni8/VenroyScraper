@@ -27,5 +27,5 @@ class ProductLoader(ItemLoader):
     product_name_out = TakeFirst()
     colour_out = Compose(MapCompose(lambda v: v.strip()), Join('; '))
     price_out = Compose(TakeFirst(), extract_price)
-    image_urls_out = Compose(MapCompose(lambda v: v.strip()), Join('; '))
+    image_urls_out = Compose(MapCompose(lambda v: 'https:' + v.strip()), Join('; '))
     description_out = Compose(MapCompose(lambda v: v.strip()), Join())
