@@ -33,11 +33,10 @@ FIELDS_TO_EXPORT = [
     'image_urls',
     'description'
 ]
-
 CSV_DELIMITER = "/n"
 
-#EXTENSIONS = { 'scrapy.extensions.closespider.CloseSpider': 5}
-CLOSESPIDER_ITEMCOUNT = 4
+
+CLOSESPIDER_ITEMCOUNT = 149
 
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)

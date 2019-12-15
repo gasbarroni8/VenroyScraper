@@ -14,3 +14,5 @@ Creates a csv file with crawled data. Includes following fields:
 * price
 * image_urls (splitted by ;)
 * description
+
+To change a number of crawled products, set CLOSESPIDER_ITEMCOUNT from settings.py to another value.
